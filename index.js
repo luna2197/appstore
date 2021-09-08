@@ -3,6 +3,12 @@ const express = require('express');
 const bodyparser = require('body-parser');
 const jwt = require('jsonwebtoken')
 
+//Puerto
+const PORT = process.env.PORT || 3000;
+
+//dotenv
+require('dotenv').config()
+
 //Servicios
 const servicioCategoria = require('./servicios/ServiceCategoria');
 const servicioComentario = require('./servicios/ServiceComentario');
@@ -705,4 +711,4 @@ app.post('/login/:user/:pass', (req, res) => {
 
 })
 
-app.listen(3000);
+app.listen(PORT);
