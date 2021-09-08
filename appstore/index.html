@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        #intro {
+            background-image: url(data:image/jpeg;base64,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);
+            height: 100vh;
+        }
+
+        /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+            #intro {
+                margin-top: -58.59px;
+            }
+        }
+
+        .navbar .nav-link {
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+        <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand nav-link" target="_blank" >
+                <strong>AppStore</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+                
+
+                <ul class="navbar-nav d-flex flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" 
+                            rel="nofollow" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" rel="nofollow" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link"  rel="nofollow" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link"  rel="nofollow"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+        <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-md-8">
+                        <!--form login-->
+                        <form class="bg-white  rounded-5 shadow-5-strong p-5">
+                            <!-- Usario input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="user" class="form-control" />
+                                <label class="form-label" for="form1Example1">Usuario</label>
+                            </div>
+
+                            <!-- Contraseña input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="pass" class="form-control" />
+                                <label class="form-label" for="form1Example2">Contraseña</label>
+                            </div>
+
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="form1Example3"
+                                            checked />
+                                        <label class="form-check-label" for="form1Example3">
+                                            Recordar 
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col text-center">
+                                    <!-- Link -->
+                                    <a href="">Olvido Contraseña?</a>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="button"  id="login" class="btn btn-primary btn-block">Ingresar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/controlador.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="consumo/configuracion.js"></script>
+    <script src="consumo/cargarLogin.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+</body>
+
+</html>

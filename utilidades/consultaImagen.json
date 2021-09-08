@@ -1,0 +1,7 @@
+{
+    "selectImagen": "SELECT * FROM tblimagenaplicacion",
+    "insertImagen": "INSERT INTO tblimagenaplicacion  (url, codigoAplicacion) VALUES(?,?)",
+    "updateImagen": "UPDATE tblimagenaplicacion SET url=? , codigoAplicacion=? WHERE idImagen=?",
+    "deleteImagen": "DELETE FROM tblimagenaplicacion WHERE idImagen =?",
+    "selectImagenbyID" : "SELECT * FROM tblimagenaplicacion WHERE codigoAplicacion = ?"
+}

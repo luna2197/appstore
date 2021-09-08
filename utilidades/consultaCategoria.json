@@ -1,0 +1,7 @@
+{
+    "selectCategoria": "SELECT * FROM tblcatagoria",
+    "insertCategoria": "INSERT INTO tblcatagoria (descripcion) VALUES(?)",
+    "updateCategoria": "UPDATE tblcatagoria SET descripcion=? WHERE idCategoria=?",
+    "deleteCategoria": "DELETE FROM tblcatagoria WHERE idCategoria =?",
+    "selectByIdCategoria" :"SELECT * FROM tblcatagoria WHERE idCategoria=?"
+}
